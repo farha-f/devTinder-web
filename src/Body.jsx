@@ -33,10 +33,14 @@ const Body =()=>{
     },[])
 
     return (
-       <div>
+       <div className="min-h-screen flex flex-col">
        <NavBar />
+       <div className="flex-1 overflow-y-auto">
        <Outlet />
+       </div>
+       <div className="mt-auto bg-neutral text-neutral-content p-10">
        <Footer />
+       </div>
         </div>
     )
 }
